@@ -4,6 +4,8 @@ const morgan = require('morgan');
 const app = express();
 const MongoClient = require('mongodb').MongoClient;
 require('dotenv').config();
+const  cors = require("cors");
+
 const revenue_by_product_line = require('./routes/revenue_by_product_line.js');
 const purchases_by_customer_type = require('./routes/purchases-by-customer-type');
 const average_rating_by_gender = require('./routes/average-rating-by-gender');
@@ -11,8 +13,9 @@ const average_rating_by_gender = require('./routes/average-rating-by-gender');
 const uri = process.env.DB_CONNECTION;
 
 
+app.use(cors());
 
-app.get('/hello', (req, res) => {
+app.get('/', (req, res) => {
     res.json({
         message: " ❤ hello To my backend ❤",
     });
@@ -23,8 +26,6 @@ app.use(morgan('tiny'));
 app.use('/api', purchases_by_customer_type);
 app.use('/api', revenue_by_product_line);
 app.use('/api', average_rating_by_gender);
-
-
 
 
 

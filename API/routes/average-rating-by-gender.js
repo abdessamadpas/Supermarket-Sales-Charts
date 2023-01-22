@@ -15,7 +15,7 @@ router.get('/average-rating-by-gender', (req, res) => {
                 $group: {
                     _id: "$Gender",
                     count: { $sum: 1 },
-                    purchases: { $avg: { $toDouble: "$Rating" } } // sum of all purchases
+                    rating: { $avg: { $toDouble: "$Rating" } } // sum of all purchases
                 }
             }
         ]).toArray((err, result) => {

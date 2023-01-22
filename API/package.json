@@ -14,9 +14,13 @@
         "supermarket_sales"
     ],
     "author": "Abdessamad AALOUWAN",
+    "engines" :{
+        "node": "v18.13.0"
+    },
     "license": "ISC",
     "dependencies": {
         "body-parser": "^1.20.1",
+        "cors": "^2.8.5",
         "csv-parser": "^3.0.0",
         "csvtojson": "^2.0.10",
         "dotenv": "^16.0.3",
