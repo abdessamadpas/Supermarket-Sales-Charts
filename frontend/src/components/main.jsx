@@ -14,7 +14,7 @@ function Main() {
     useEffect(() => {
       const fetchData = async () => {
         const result = await axios(
-          'http://127.0.0.1:5000/api/purchases-by-customer-type',
+          'https://supermarket-sales-charts.vercel.app/api/purchases-by-customer-type',
         );
   
         setData(result.data);
@@ -25,7 +25,7 @@ function Main() {
     useEffect(() => {
         const fetchData = async () => {
           const result = await axios(
-            'http://127.0.0.1:5000/api/average-rating-by-gender',
+            'https://supermarket-sales-charts.vercel.app/api/average-rating-by-gender',
           );
     
           setDatasec(result.data);
@@ -36,7 +36,7 @@ function Main() {
       useEffect(() => {
         const fetchData = async () => {
           const result = await axios(
-            'http://127.0.0.1:5000/api/revenue-by-product-line',
+            'https://supermarket-sales-charts.vercel.app/api/revenue-by-product-line',
           );
     
           setDatathird(result.data);
