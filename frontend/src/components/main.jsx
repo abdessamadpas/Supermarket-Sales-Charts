@@ -75,10 +75,10 @@ function Main() {
             height={100}
             data={data}
             margin={{
-                top: 50,
-                right: 250,
-                left: 200,
-                bottom: 15,
+                top: 10,
+                right: 100,
+                left: 100,
+                bottom: 0,
             }}
             >
             <CartesianGrid strokeDasharray="1 1" />
@@ -96,10 +96,10 @@ function Main() {
             height={100}
             data={datasec}
             margin={{
-                top: 50,
-                right: 250,
-                left: 200,
-                bottom: 15,
+                top: 5,
+                right: 100,
+                left: 100,
+                bottom: 0,
             }}
             >
             <CartesianGrid strokeDasharray="1 1" />
@@ -116,10 +116,10 @@ function Main() {
           height={300}
           data={datathird}
           margin={{
-            top: 50,
+            top: 5,
             right: 100,
             left: 100,
-            bottom: 15,
+            bottom: 0,
           }}
           barSize={20}
         >
