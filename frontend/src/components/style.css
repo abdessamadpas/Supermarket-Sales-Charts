@@ -150,7 +150,7 @@ body.light-mode .video-bg:before {
     position: relative;
     width: 100%;
     border-radius: 14px;
-    backdrop-filter: blur(70px);
+    backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(15px);
     font-size: 15px;
     font-weight: 500;
