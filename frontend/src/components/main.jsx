@@ -117,8 +117,8 @@ function Main() {
           data={datathird}
           margin={{
             top: 50,
-            right: 250,
-            left: 200,
+            right: 100,
+            left: 100,
             bottom: 15,
           }}
           barSize={20}
